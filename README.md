@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 credit to: https://www.youtube.com/watch?v=HgfA4W_VjmI
 
 2:34:53
+=======
+Credit to https://www.youtube.com/watch?v=HgfA4W_VjmI
+
+>>>>>>> c11e3b3fbe4aa903e7d48c0939896e663955c3b1
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
