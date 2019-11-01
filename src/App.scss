@@ -114,7 +114,6 @@ $generic-bg: #db4c3f;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 14px;
-    list-style-type: none;
     border-bottom: 1px solid #f0f0f0;
     padding-left: 10px;
     cursor: pointer;
@@ -559,7 +558,7 @@ header {
     }
 
     &__submit {
-        @include btn(90px);
+        @include btn('90px');
     }
 }
 
@@ -589,16 +588,16 @@ header {
     width: 200px;
     right: 0;
 
-    &__list {
+    &__list li {
         @include task-item();
-
+    
         span:first-of-type {
             margin-right: 10px;
 
             svg {
                 fill: gray;
             }
-        }
+        }        
     }
 }
 
@@ -608,8 +607,19 @@ header {
     @include box-overlay();
     background-color: white;
 
+    @include mq('900px') {
+        width: 200px;
+        right: 0;
+    }
+
     &__list li {
         @include task-item();
+        padding: 0;
+
+        div:nth-child(1) {
+            width: 100%;
+            padding:10px;
+        }
     }
 }
 
@@ -636,7 +646,7 @@ header {
     }
 
     &__submit {
-        @include btn(100px);
+        @include btn('100px');
     }
 
     &__cancel {
